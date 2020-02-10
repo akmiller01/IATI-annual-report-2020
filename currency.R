@@ -3,11 +3,11 @@ new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"
 if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, require, character.only=T)
 
-setwd("~/git/IATI-annual-report-2019")
+setwd("~/git/IATI-annual-report-2020")
 
-dat <- fread("https://www.imf.org/external/pubs/ft/weo/2018/02/weodata/WEOOct2018all.xls",sep="\t",na.strings=c("","n/a","--"),check.names=T)
+dat <- fread("https://www.imf.org/external/pubs/ft/weo/2019/02/weodata/WEOOct2019all.xls",sep="\t",na.strings=c("","n/a","--"),check.names=T)
 dat = subset(dat,WEO.Subject.Code %in% c("NGDP","NGDPD"))
-keep = c("ISO","Country","Units",paste0("X",1980:2023))
+keep = c("ISO","Country","Units",paste0("X",1980:2024))
 dat = dat[,keep,with=F]
 
 mdat <- melt(dat,id.vars=c("ISO","Country","Units"))
@@ -20,6 +20,11 @@ names(wdat) <- make.names(names(wdat))
 wdat$ex.rate <- wdat$U.S..dollars/wdat$National.currency
 
 ccs = fread("currency_codes.csv")
+ccs = subset(ccs, ISO!="KOS") # Duplicate
+
+setdiff(ccs$ISO,wdat$ISO)
+setdiff(wdat$ISO,ccs$ISO)
+
 ccs = subset(ccs,is.na(duplicate))
 keep = c("ISO","cc")
 ccs = ccs[,keep,with=F]

@@ -1,12 +1,14 @@
 ISO,currency,cc,duplicate
 AFG,Afghan Afghani,AFN,
 ALB,Albanian lek,ALL,
+ABW,Aruban Florin,AWG,
 DZA,Algerian dinar,DZD,
 AGO,Angolan kwanza,AOA,
 ARG,Argentine peso,ARS,
 ARM,Armenian dram,AMD,
 AUS,Australian dollar,AUD,
 KIR,Australian dollar,AUD,1
+NRU,Australian dollar,AUD,1
 TUV,Australian dollar,AUD,1
 AZE,Azerbaijan manat,AZN,
 BHS,Bahamian dollar,BSD,
@@ -71,6 +73,7 @@ GRC,Euro,EUR,1
 IRL,Euro,EUR,1
 ITA,Euro,EUR,1
 KOS,Euro,EUR,1
+UVK,Euro,EUR,1
 LUX,Euro,EUR,1
 MLT,Euro,EUR,1
 MNE,Euro,EUR,1
@@ -111,6 +114,7 @@ LBN,Lebanese pound,LBP,
 LSO,Lesotho loti,LSL,
 LBY,Libyan dinar,LYD,
 LTU,Lithuanian litas,LTL,
+MAC,Macanese pataca,MOP,
 MKD,Macedonian denar,MKD,
 MDG,Malagasy ariary,MGA,
 MWI,Malawi kwacha,MWK,
@@ -151,6 +155,7 @@ SRB,Serbian dinar,RSD,
 SYC,Seychelles rupee,SCR,
 SLE,Sierra Leonean leone,SLL,
 SGP,Singapore dollar,SGD,
+SOM,Somali shilling,SOS,
 SLB,Solomon Islands dollar,SBD,
 ZAF,South African rand,ZAR,
 SSD,South Sudanese pound,SSP,
@@ -176,6 +181,7 @@ MHL,U.S. dollar,USD,1
 FSM,U.S. dollar,USD,1
 PLW,U.S. dollar,USD,1
 PAN,U.S. dollar,USD,1
+PRI,U.S. dollar,USD,1
 TLS,U.S. dollar,USD,1
 USA,U.S. dollar,USD,
 ZWE,U.S. dollar,USD,1
