@@ -3,7 +3,7 @@ sep/*
 venv
 __pycache__
 *.pyc
-output/crs.csv
+output/CRS 2018 data.txt
 output/iati_unfiltered_agg.csv
 output/iati_unfiltered_disagg.csv
 output/output.zip

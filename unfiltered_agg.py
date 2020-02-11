@@ -26,6 +26,8 @@ ratedf["KSH"] = ratedf["KES"]
 ratedf["GIP"] = ratedf["GBP"]
 ratedf["FKP"] = ratedf["GBP"]
 ratedf["AON"] = ratedf["AOA"]
+ratedf["UYI"] = ratedf["UYU"]
+ratedf["NUL"] = {"2000": 0}
 
 
 # Used for ambiguously structed arrays resulting from XML queries. If an array has any entries, take the first one.

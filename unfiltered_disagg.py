@@ -24,6 +24,8 @@ ratedf["KSH"] = ratedf["KES"]
 ratedf["GIP"] = ratedf["GBP"]
 ratedf["FKP"] = ratedf["GBP"]
 ratedf["AON"] = ratedf["AOA"]
+ratedf["UYI"] = ratedf["UYU"]
+ratedf["NUL"] = {"2000": 0}
 
 
 # Used for ambiguously structed arrays resulting from XML queries. If an array has any entries, take the first one.
@@ -132,10 +134,10 @@ class IatiFlat(object):
                 percentage = attribs['percentage'] if 'percentage' in attrib_keys else None
                 if percentage is not None:
                     percentage = percentage.replace("%", "")
-                activity_recipient_percentage += float(percentage) if percentage is not None else 0.0
+                activity_recipient_percentage += float(percentage) if percentage not in ['', None] else 0.0
                 code = attribs['code'] if 'code' in attrib_keys else None
                 if code is not None:
-                    activity_recipients[code] = float(percentage) if percentage is not None else None
+                    activity_recipients[code] = float(percentage) if percentage not in ['', None] else None
 
             recipient_regions = activity.findall("recipient-region")
             for recipient_region in recipient_regions:
@@ -144,10 +146,10 @@ class IatiFlat(object):
                 percentage = attribs['percentage'] if 'percentage' in attrib_keys else None
                 if percentage is not None:
                     percentage = percentage.replace("%", "")
-                activity_recipient_percentage += float(percentage) if percentage is not None else 0.0
+                activity_recipient_percentage += float(percentage) if percentage not in ['', None] else 0.0
                 code = attribs['code'] if 'code' in attrib_keys else None
                 if code is not None:
-                    activity_recipients[code] = float(percentage) if percentage is not None else None
+                    activity_recipients[code] = float(percentage) if percentage not in ['', None] else None
 
             # If percentages are greater than 100, rescale to 100. Also divide by 100 to make sure percentages run 0 to 1.00
             activity_recipient_percentage = max(activity_recipient_percentage, 100.0)

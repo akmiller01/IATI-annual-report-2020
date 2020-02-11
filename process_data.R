@@ -207,7 +207,7 @@ setnames(trans.recip.max,"value","iati.value")
 exclude = c("wwf-uk")
 trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 
-crs <- fread("crs.csv")
+crs <- read.delim("CRS 2018 data.txt", sep="|")
 
 crs <- subset(crs,Recipient %in% iati_members)
 crs$value <- crs$Value*1000000
