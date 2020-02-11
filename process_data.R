@@ -3,7 +3,7 @@ new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"
 if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, require, character.only=T)
 
-wd = "/home/alex/git/IATI-annual-report-2019/output/"
+wd = "/home/alex/git/IATI-annual-report-2020/output/"
 setwd(wd)
 
 agg <- fread("iati_unfiltered_agg.csv")
@@ -12,12 +12,12 @@ dagg <- fread("iati_unfiltered_disagg.csv")
 transactions.aggregate <- subset(agg,budget_or_transaction=="Transaction")
 budgets.aggregate <- subset(agg,budget_or_transaction=="Budget")
 
-transactions.aggregate.2018 <- subset(transactions.aggregate,year==2018)
-trans.2018.tab <- data.table(transactions.aggregate.2018)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
+transactions.aggregate.2019 <- subset(transactions.aggregate,year==2019)
+trans.2019.tab <- data.table(transactions.aggregate.2019)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
 
-budgets.aggregate.18.19.20 <- subset(budgets.aggregate,year %in% c(2018,2019,2020))
+budgets.aggregate.19.20.21 <- subset(budgets.aggregate,year %in% c(2019,2020,2021))
 
-bud.18.19.20.tab <- data.table(budgets.aggregate.18.19.20)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
+bud.19.20.21.tab <- data.table(budgets.aggregate.19.20.21)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
 
 iati_members <- c(
   "Ghana"
@@ -185,17 +185,17 @@ recode_iati_members <- function(x){
 }
 
 transactions.disaggregate <- subset(dagg,budget_or_transaction=="Transaction")
-transactions.disaggregate.16.17.18 <- subset(transactions.disaggregate,year %in% c(2016,2017,2018))
+transactions.disaggregate.17.18.19 <- subset(transactions.disaggregate,year %in% c(2017,2018,2019))
 
-transactions.disaggregate.16.17.18$recipient_code <- toupper(transactions.disaggregate.16.17.18$recipient_code)
-transactions.disaggregate.16.17.18 <- subset(transactions.disaggregate.16.17.18,recipient_code %in% iati_member_codes)
-transactions.disaggregate.16.17.18$recipient <- sapply(transactions.disaggregate.16.17.18$recipient_code,recode_iati_members)
+transactions.disaggregate.17.18.19$recipient_code <- toupper(transactions.disaggregate.17.18.19$recipient_code)
+transactions.disaggregate.17.18.19 <- subset(transactions.disaggregate.17.18.19,recipient_code %in% iati_member_codes)
+transactions.disaggregate.17.18.19$recipient <- sapply(transactions.disaggregate.17.18.19$recipient_code,recode_iati_members)
 
-transactions.disaggregate.16.17.18$publisher[which(transactions.disaggregate.16.17.18$publisher=="usaid")] = "unitedstates"
-transactions.disaggregate.16.17.18$publisher[which(transactions.disaggregate.16.17.18$publisher=="ec-echo")] = "ec-devco"
-transactions.disaggregate.16.17.18$publisher[which(transactions.disaggregate.16.17.18$publisher=="ec-near")] = "ec-devco"
+transactions.disaggregate.17.18.19$publisher[which(transactions.disaggregate.17.18.19$publisher=="usaid")] = "unitedstates"
+transactions.disaggregate.17.18.19$publisher[which(transactions.disaggregate.17.18.19$publisher=="ec-echo")] = "ec-devco"
+transactions.disaggregate.17.18.19$publisher[which(transactions.disaggregate.17.18.19$publisher=="ec-near")] = "ec-devco"
 
-trans.recip.donor.tab <- data.table(transactions.disaggregate.16.17.18)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(recipient,publisher,year)]
+trans.recip.donor.tab <- data.table(transactions.disaggregate.17.18.19)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(recipient,publisher,year)]
 
 trans.recip.max <- trans.recip.donor.tab[,.(value=max(value)),by=.(recipient,publisher)]
 
@@ -207,15 +207,17 @@ setnames(trans.recip.max,"value","iati.value")
 exclude = c("wwf-uk")
 trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 
-crs <- read.delim("CRS 2018 data.txt", sep="|")
+crs <- fread("crs.csv")
+names(crs) = make.names(names(crs))
 
-crs <- subset(crs,Recipient %in% iati_members)
-crs$value <- crs$Value*1000000
+crs <- subset(crs,Recipient %in% iati_members & Amount.type=="Current Prices")
+crs$value <- crs$USD_Disbursement_Defl*1000000
 setnames(crs,"Recipient","recipient")
 setnames(crs,"Donor","donor")
 setnames(crs,"Year","year")
+setnames(crs,"Value","value")
 keep <- c("recipient","donor","year","value")
-crs <- crs[,keep,with=F]
+crs <- data.table(crs)[,keep,with=F]
 
 vague_donors <- c(
   "All Donors, Total"
