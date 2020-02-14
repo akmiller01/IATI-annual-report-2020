@@ -211,7 +211,7 @@ crs <- fread("crs.csv")
 names(crs) = make.names(names(crs))
 
 crs <- subset(crs,Recipient %in% iati_members & Amount.type=="Current Prices")
-crs$value <- crs$USD_Disbursement_Defl*1000000
+crs$value <- crs$Value*1000000
 setnames(crs,"Recipient","recipient")
 setnames(crs,"Donor","donor")
 setnames(crs,"Year","year")
@@ -327,11 +327,11 @@ joint.top15$publishing.to.iati <- as.numeric(!is.na(joint.top15$iati.value))
 joint.top15$donor.or.publisher <- joint.top15$donor
 joint.top15$donor.or.publisher[which(is.na(joint.top15$donor.or.publisher))] <- joint.top15$publisher[which(is.na(joint.top15$donor.or.publisher))]
 
-write.csv(transactions.aggregate.2018,"transactions_2018.csv",na="",row.names=FALSE)
-write.csv(trans.2018.tab,"transactions_2018_by_publisher.csv",na="",row.names=FALSE)
-write.csv(budgets.aggregate.18.19.20,"budgets_181920.csv",na="",row.names=FALSE)
-write.csv(bud.18.19.20.tab,"budgets_181920_by_publisher.csv",na="",row.names=FALSE)
-write.csv(transactions.disaggregate.16.17.18,"transactions_161718_disaggregated.csv",na="",row.names=FALSE)
+write.csv(transactions.aggregate.2019,"transactions_2019.csv",na="",row.names=FALSE)
+write.csv(trans.2019.tab,"transactions_2019_by_publisher.csv",na="",row.names=FALSE)
+write.csv(budgets.aggregate.19.20.21,"budgets_192021.csv",na="",row.names=FALSE)
+write.csv(bud.19.20.21.tab,"budgets_192021_by_publisher.csv",na="",row.names=FALSE)
+write.csv(transactions.disaggregate.17.18.19,"transactions_171819_disaggregated.csv",na="",row.names=FALSE)
 write.csv(trans.recip.top15,"transactions_by_recipient.csv",na="",row.names=FALSE)
 write.csv(crs.top15,"crs_by_recipient.csv",na="",row.names=FALSE)
 write.csv(joint.top15,"merged_by_recipient.csv",na="",row.names=FALSE)
