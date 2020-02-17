@@ -34,7 +34,7 @@
 "Burkina Faso","afd",110796594.265758,2017
 "Burkina Faso","bmz",81515798.290663,2019
 "Burkina Faso","unitedstates",58095428.67,2017
-"Burkina Faso","wfp",53754642,2019
+"Burkina Faso","wfp",53763171,2019
 "Burkina Faso","gac-amc",39063243.471455,2018
 "Burkina Faso","danida",38060744.195232,2018
 "Burkina Faso","sida",27820026.133417,2019
@@ -52,7 +52,7 @@
 "Burundi","minbuza_nl",37097327.75,2018
 "Burundi","gavi",33709619,2018
 "Burundi","unhcr",27317311.18,2018
-"Burundi","be-dgd",26972911.7611,2018
+"Burundi","be-dgd",25488566.8455,2018
 "Burundi","wvi",19878579,2018
 "Burundi","ifad",17769423.501182,2017
 "Burundi","unpf",15843650.5583,2017
@@ -64,21 +64,21 @@
 "Colombia","unitedstates",322530304.300001,2018
 "Colombia","bmz",240040667.528715,2018
 "Colombia","undp",92242440,2018
-"Colombia","wfp",72191054,2019
+"Colombia","wfp",72191134,2019
 "Colombia","unpf",59745392.343,2017
 "Colombia","ec-devco",57603707.32757,2018
 "Colombia","norad",52624580.1744,2017
 "Colombia","gac-amc",38754490.2749895,2017
 "Colombia","fao",35112046.9,2018
 "Colombia","sida",34323477.572226,2017
+"Colombia","fco",31350297.5395396,2018
 "Colombia","fo_germany",30211886.7487715,2019
-"Colombia","fco",30086561.82493,2018
 "Colombia","icrc",29090328.583296,2018
 "Congo","afdb",113799761.304922,2019
 "Congo","afd",85700685.85381,2018
 "Congo","worldbank",55431284,2019
 "Congo","ec-devco",21243154.931555,2018
-"Congo","wfp",17783572,2019
+"Congo","wfp",17785573,2019
 "Congo","unhcr",12211981.54,2017
 "Congo","pin",11677850.360262,2019
 "Congo","unitedstates",8527392.36,2018
@@ -93,7 +93,7 @@
 "Democratic Republic of the Congo","worldbank",423287305,2019
 "Democratic Republic of the Congo","who",284342327.35,2019
 "Democratic Republic of the Congo","dfid",268010340.8924,2018
-"Democratic Republic of the Congo","wfp",258769456,2019
+"Democratic Republic of the Congo","wfp",258786869,2019
 "Democratic Republic of the Congo","bmz",210389457.898532,2019
 "Democratic Republic of the Congo","ec-devco",168777365.9755,2018
 "Democratic Republic of the Congo","ifrcrcs",110719595.385236,2018
@@ -103,7 +103,7 @@
 "Democratic Republic of the Congo","gavi",90086506,2017
 "Democratic Republic of the Congo","icrc",79820398.824436,2018
 "Democratic Republic of the Congo","sida",79297816.361698,2018
-"Democratic Republic of the Congo","be-dgd",78839865.983245,2018
+"Democratic Republic of the Congo","be-dgd",76961280.983245,2018
 "Dominican Republic","iadb",464076655,2019
 "Dominican Republic","unitedstates",64836016.41,2017
 "Dominican Republic","worldbank",55227289,2019
@@ -118,7 +118,7 @@
 "Dominican Republic","aecid",3013510.55356,2018
 "Dominican Republic","who",2478683,2019
 "Dominican Republic","globalgiving",2316810,2019
-"Dominican Republic","wfp",2222331,2019
+"Dominican Republic","wfp",2222860,2019
 "Ghana","self-help-africa",1415849965.3056,2019
 "Ghana","worldbank",358280422,2017
 "Ghana","unitedstates",200547760.08,2017
@@ -127,7 +127,7 @@
 "Ghana","afdb",70487696.919342,2017
 "Ghana","gac-amc",66480255.4053927,2018
 "Ghana","dfid",64796809.1056,2017
-"Ghana","danida",40796898.775776,2018
+"Ghana","danida",40796898.7916161,2018
 "Ghana","gavi",34758022,2018
 "Ghana","millenniumchallenge",30511251.72,2019
 "Ghana","afd",24142520.496072,2019
@@ -143,7 +143,7 @@
 "Guinea","undp",19122699,2019
 "Guinea","unpf",14343938.2888,2017
 "Guinea","gavi",13171014,2017
-"Guinea","wfp",9321050,2019
+"Guinea","wfp",9321075,2019
 "Guinea","be-dgd",8716084.62442,2018
 "Guinea","afdb",8159586.453741,2017
 "Guinea","ofid",5970468.4,2017
@@ -154,7 +154,7 @@
 "Honduras","eib",73447706.76,2019
 "Honduras","ec-devco",61229059.7592,2018
 "Honduras","bmz",50285923.955025,2019
-"Honduras","unops",27680424,2019
+"Honduras","unops",28865609,2019
 "Honduras","worldbank",23883459,2017
 "Honduras","wfp",21300820,2018
 "Honduras","gac-amc",19867926.6690473,2018
@@ -249,9 +249,9 @@
 "Mali","minbuza_nl",50169160.19,2018
 "Mali","sida",45902289.205301,2018
 "Mali","icrc",45630028.434046,2018
-"Mali","unops",45297794,2019
+"Mali","unops",45343853,2019
 "Mali","fo_germany",42202561.6754982,2019
-"Mali","danida",41672392.322762,2019
+"Mali","danida",41936817.322762,2019
 "Mali","afdb",40604286.523959,2017
 "Mali","undp",35439709,2017
 "Moldova","ec-devco",107943523.405308,2017
@@ -280,16 +280,16 @@
 "Montenegro","ifad",1772250,2018
 "Montenegro","fo_germany",1630385.80448621,2019
 "Montenegro","who",951381.64,2017
-"Montenegro","fco",440878.7863,2018
+"Montenegro","fco",857301.28045949,2017
 "Montenegro","slovakaid",298405.5475,2018
 "Montenegro","ilo",276343,2017
-"Montenegro","unops",260526,2019
+"Montenegro","unops",260537,2019
 "Myanmar","worldbank",232738441,2019
 "Myanmar","dfid",140680808.8631,2017
 "Myanmar","ec-devco",116329392.879183,2019
 "Myanmar","unitedstates",112376699.62,2018
 "Myanmar","ausgov",84957743.646,2019
-"Myanmar","unops",63062760,2019
+"Myanmar","unops",61846814,2019
 "Myanmar","icrc",54241479.172784,2018
 "Myanmar","unpf",48072058.6053,2017
 "Myanmar","wfp",46601684,2019
@@ -334,6 +334,7 @@
 "Papua New Guinea","worldbank",192367527,2018
 "Papua New Guinea","ec-devco",47497499.653351,2019
 "Papua New Guinea","who",42819777.58,2019
+"Papua New Guinea","mfat",30609375.4984089,2019
 "Papua New Guinea","undp",16831829,2019
 "Papua New Guinea","unpf",13696763.3663,2017
 "Papua New Guinea","unitedstates",9202673.25,2018
@@ -341,7 +342,6 @@
 "Papua New Guinea","gavi",8304278,2019
 "Papua New Guinea","ifad",5259320.31937,2019
 "Papua New Guinea","ofid",3366144.18,2017
-"Papua New Guinea","unw",3280303,2019
 "Papua New Guinea","unfpa",3245730.91,2019
 "Papua New Guinea","fao",3127116.04,2017
 "Rwanda","worldbank",279224931,2017
@@ -406,7 +406,7 @@
 "Somalia","danida",60568972.639487,2019
 "Syrian Arab Republic","fo_germany",620978157.971529,2018
 "Syrian Arab Republic","unitedstates",591700340.649999,2018
-"Syrian Arab Republic","wfp",417867520,2019
+"Syrian Arab Republic","wfp",418236991,2019
 "Syrian Arab Republic","ifrcrcs",387762968.917404,2018
 "Syrian Arab Republic","pin",304756695.914646,2019
 "Syrian Arab Republic","dfid",267618464.4567,2019
@@ -416,9 +416,9 @@
 "Syrian Arab Republic","norad",123314803.494,2018
 "Syrian Arab Republic","gac-amc",102815710.490077,2018
 "Syrian Arab Republic","homeoffice",99577010,2019
+"Syrian Arab Republic","danida",82561112.54311,2019
 "Syrian Arab Republic","sida",72911200.117347,2018
 "Syrian Arab Republic","who",66039255.92,2017
-"Syrian Arab Republic","danida",60232952.794608,2018
 "Tanzania","unitedstates",703750445.28,2018
 "Tanzania","worldbank",557770565,2019
 "Tanzania","rc",406768417.04411,2019
@@ -426,7 +426,7 @@
 "Tanzania","sida",135674207.064416,2017
 "Tanzania","ec-devco",135648155.184975,2018
 "Tanzania","afdb",105442829.435793,2017
-"Tanzania","gac-amc",86881646.496366,2017
+"Tanzania","gac-amc",87857391.862591,2017
 "Tanzania","bmz",67730434.486814,2019
 "Tanzania","unhcr",66466731.25,2017
 "Tanzania","afd",55790453.42024,2019
@@ -449,7 +449,7 @@
 "Viet Nam","wvi",14914604,2018
 "Viet Nam","finland_mfa",12514283.7436,2017
 "Viet Nam","ifad",11747833.939436,2017
-"Yemen","wfp",1458018460,2019
+"Yemen","wfp",1458411595,2019
 "Yemen","ksrelief291",1014825272,2018
 "Yemen","unitedstates",587150176.79,2019
 "Yemen","worldbank",573025262,2019
