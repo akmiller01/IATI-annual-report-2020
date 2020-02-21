@@ -210,8 +210,8 @@ trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 crs <- fread("crs.csv")
 names(crs) = make.names(names(crs))
 
-crs <- subset(crs,Recipient %in% iati_members & Amount.type=="Current Prices")
-crs$value <- crs$Value*1000000
+crs <- subset(crs,Recipient %in% iati_members & Amount.type=="Current Prices" & Year==2018)
+crs$Value <- crs$Value*1000000
 setnames(crs,"Recipient","recipient")
 setnames(crs,"Donor","donor")
 setnames(crs,"Year","year")
