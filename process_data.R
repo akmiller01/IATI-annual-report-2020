@@ -197,63 +197,6 @@ transactions.disaggregate.17.18.19$publisher[which(transactions.disaggregate.17.
 
 trans.recip.donor.tab <- data.table(transactions.disaggregate.17.18.19)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(recipient,publisher,year)]
 
-trans.recip.max <- trans.recip.donor.tab[,.(value=max(value)),by=.(recipient,publisher)]
-
-trans.recip.max <- merge(trans.recip.max,trans.recip.donor.tab,all.x=TRUE)
-setnames(trans.recip.max,"year","iati.year")
-setnames(trans.recip.max,"value","iati.value")
-
-# exclude <- c("abt","akfuk73","dec-uk","palladium","plan_usa","spuk","wwf-uk")
-exclude = c("wwf-uk")
-trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
-
-crs <- fread("crs.csv")
-names(crs) = make.names(names(crs))
-
-crs <- subset(crs,Recipient %in% iati_members & Amount.type=="Current Prices" & Year==2018)
-crs$Value <- crs$Value*1000000
-setnames(crs,"Recipient","recipient")
-setnames(crs,"Donor","donor")
-setnames(crs,"Year","year")
-setnames(crs,"Value","value")
-keep <- c("recipient","donor","year","value")
-crs <- data.table(crs)[,keep,with=F]
-
-vague_donors <- c(
-  "All Donors, Total"
-  ,"DAC Countries, Total"
-  ,"Multilaterals, Total"
-  ,"Non-DAC Countries, Total"
-  ,"Memo: Private Donors, Total"
-  ,"G7 Countries, Total"
-  ,"DAC EU Members, Total"
-  ,"DAC EU Members + EC, Total"
-  ,"Other Multilateral, Total"
-  ,"Regional Development Banks, Total"
-  ,"Official Donors, Total"
-  ,"Private Donors, Total"
-  #Duplicates
-  ,"International Development Association [IDA]"
-  ,"World Bank, Total"
-  ,"AsDB Special Funds"
-  ,"African Development Fund [AfDF]"
-  ,"African Development Bank [AfDB]"
-  ,"IMF (Concessional Trust Funds)"
-  ,"United Nations, Total"
-  ,"IDB Special Fund"
-  ,"Asian Development Bank [AsDB]"
-  ,"IDB Invest"
-  )
-
-crs <- subset(crs,!donor %in% vague_donors)
-crs = crs[,.(value=sum(value,na.rm=T)),by=.(recipient,donor,year)]
-
-crs <- crs[order(crs$recipient,-crs$value),]
-crs.top15 <- data.table(crs)[,head(.SD,15),by="recipient"]
-
-trans.recip.max <- trans.recip.max[order(trans.recip.max$recipient,-trans.recip.max$iati.value),]
-trans.recip.top15 <- trans.recip.max[,head(.SD,15),by="recipient"]
-
 publisher.dict <- c(
   "worldbank"="World Bank Group, Total"    
   ,"asdb"="Asian Development Bank, Total"         
@@ -335,9 +278,65 @@ publisher.dict <- c(
 rev.publisher.dict = names(publisher.dict)
 names(rev.publisher.dict) = publisher.dict
 
-trans.recip.max$donor = publisher.dict[trans.recip.max$publisher]
-trans.recip.max$publisher[which(!is.na(trans.recip.max$donor))] = rev.publisher.dict[trans.recip.max$donor[which(!is.na(trans.recip.max$donor))]]
-trans.recip.max = trans.recip.max[,.(iati.value=sum(iati.value,na.rm=T)),by=.(recipient,publisher,iati.year,donor)]
+trans.recip.donor.tab$donor = publisher.dict[trans.recip.donor.tab$publisher]
+trans.recip.donor.tab$publisher[which(!is.na(trans.recip.donor.tab$donor))] = rev.publisher.dict[trans.recip.donor.tab$donor[which(!is.na(trans.recip.donor.tab$donor))]]
+
+trans.recip.max <- trans.recip.donor.tab[,.(value=max(value)),by=.(recipient,publisher,donor)]
+
+trans.recip.max <- merge(trans.recip.max,trans.recip.donor.tab,all.x=TRUE)
+setnames(trans.recip.max,"year","iati.year")
+setnames(trans.recip.max,"value","iati.value")
+
+# exclude <- c("abt","akfuk73","dec-uk","palladium","plan_usa","spuk","wwf-uk")
+exclude = c("wwf-uk")
+trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
+
+crs <- fread("crs.csv")
+names(crs) = make.names(names(crs))
+
+crs <- subset(crs,Recipient %in% iati_members & Amount.type=="Current Prices" & Year==2018)
+crs$Value <- crs$Value*1000000
+setnames(crs,"Recipient","recipient")
+setnames(crs,"Donor","donor")
+setnames(crs,"Year","year")
+setnames(crs,"Value","value")
+keep <- c("recipient","donor","year","value")
+crs <- data.table(crs)[,keep,with=F]
+
+vague_donors <- c(
+  "All Donors, Total"
+  ,"DAC Countries, Total"
+  ,"Multilaterals, Total"
+  ,"Non-DAC Countries, Total"
+  ,"Memo: Private Donors, Total"
+  ,"G7 Countries, Total"
+  ,"DAC EU Members, Total"
+  ,"DAC EU Members + EC, Total"
+  ,"Other Multilateral, Total"
+  ,"Regional Development Banks, Total"
+  ,"Official Donors, Total"
+  ,"Private Donors, Total"
+  #Duplicates
+  ,"International Development Association [IDA]"
+  ,"World Bank, Total"
+  ,"AsDB Special Funds"
+  ,"African Development Fund [AfDF]"
+  ,"African Development Bank [AfDB]"
+  ,"IMF (Concessional Trust Funds)"
+  ,"United Nations, Total"
+  ,"IDB Special Fund"
+  ,"Asian Development Bank [AsDB]"
+  ,"IDB Invest"
+  )
+
+crs <- subset(crs,!donor %in% vague_donors)
+crs = crs[,.(value=sum(value,na.rm=T)),by=.(recipient,donor,year)]
+
+crs <- crs[order(crs$recipient,-crs$value),]
+crs.top15 <- data.table(crs)[,head(.SD,15),by="recipient"]
+
+trans.recip.max <- trans.recip.max[order(trans.recip.max$recipient,-trans.recip.max$iati.value),]
+trans.recip.top15 <- trans.recip.max[,head(.SD,15),by="recipient"]
 
 setnames(crs,"value","crs.value")
 setnames(crs,"year","crs.year")
