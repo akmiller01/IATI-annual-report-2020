@@ -257,15 +257,31 @@ trans.recip.top15 <- trans.recip.max[,head(.SD,15),by="recipient"]
 publisher.dict <- c(
   "worldbank"="World Bank Group, Total"    
   ,"asdb"="Asian Development Bank, Total"         
-  ,"dfid"="United Kingdom"         
-  ,"bmz"="Germany"           
-  ,"usaid"="United States"        
+  ,"dfid"="United Kingdom"
+  ,"prosperityfund"="United Kingdom"
+  ,"dit"="United Kingdom"
+  ,"hmtfitb"="United Kingdom"
+  ,"beis"="United Kingdom"
+  ,"dcms"="United Kingdom"
+  ,"dfe"="United Kingdom"
+  ,"defra_transparency"="United Kingdom"
+  ,"dwp"="United Kingdom"
+  ,"dhsc"="United Kingdom"
+  ,"fco"="United Kingdom"
+  ,"homeoffice"="United Kingdom"
+  ,"mrc"="United Kingdom"
+  ,"ukmod"="United Kingdom"
+  ,"scottish_government"="United Kingdom"
+  ,"bmz"="Germany"
+  ,"fo_germany"="Germany"
   ,"ec-devco"="EU Institutions"     
   ,"ifad"="IFAD"         
   ,"theglobalfund"="Global Fund"
   ,"ausgov"="Australia"       
   ,"minbuza_nl"="Netherlands"   
   ,"unitedstates"="United States" 
+  ,"millenniumchallenge"="United States"
+  ,"usaid"="United States"
   ,"afdb"="African Development Bank, Total"         
   ,"be-dgd"="Belgium"       
   ,"undp"="UNDP"         
@@ -277,7 +293,8 @@ publisher.dict <- c(
   ,"iadb"="Inter-American Development Bank, Total"         
   ,"norad"="Norway"        
   ,"sida"="Sweden"         
-  ,"cerf"="Central Emergency Response Fund [CERF]"         
+  ,"cerf"="Central Emergency Response Fund [CERF]"
+  ,"unocha-cbpf"="Central Emergency Response Fund [CERF]"
   # ,"fao"="FAO"          
   ,"unfpa"="UNFPA"        
   ,"ec-near"="EU Institutions"      
@@ -287,6 +304,7 @@ publisher.dict <- c(
   ,"mfat"="New Zealand"
   ,"gavi"="Global Alliance for Vaccines and Immunization [GAVI]"
   ,"jica"="Japan"
+  ,"mofa-jpn"="Japan"
   ,"bmgf"="Bill & Melinda Gates Foundation"
   ,"finland_mfa"="Finland"
   ,"theglobalfund"="Global Fund"
@@ -311,9 +329,15 @@ publisher.dict <- c(
   ,"gggi"="Global Green Growth Institute [GGGI]"
   ,"omidyarnetwork"="Omidyar Network Fund, Inc."
   ,"af"="Adaptation Fund"
+  ,"icrc"="IFRCRCS"
+  ,"ifrcrcs"="IFRCRCS"
 )
+rev.publisher.dict = names(publisher.dict)
+names(rev.publisher.dict) = publisher.dict
 
 trans.recip.max$donor = publisher.dict[trans.recip.max$publisher]
+trans.recip.max$publisher[which(!is.na(trans.recip.max$donor))] = rev.publisher.dict[trans.recip.max$donor[which(!is.na(trans.recip.max$donor))]]
+trans.recip.max = trans.recip.max[,.(iati.value=sum(iati.value,na.rm=T)),by=.(recipient,publisher,iati.year,donor)]
 
 setnames(crs,"value","crs.value")
 setnames(crs,"year","crs.year")
