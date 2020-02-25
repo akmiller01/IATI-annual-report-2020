@@ -5,6 +5,7 @@
 "Bangladesh","wfp","WFP",187832827,2019
 "Bangladesh","icrc","IFRCRCS",176402455.82584,2018
 "Bangladesh","unhcr","UNHCR",159895164.72,2018
+"Bangladesh","unicef","UNICEF",159019488,2019
 "Bangladesh","ec-devco","EU Institutions",137498683.467621,2018
 "Bangladesh","bmz","Germany",116884495.37363,2018
 "Bangladesh","unitedstates","United States",100141267.75,2017
@@ -12,29 +13,30 @@
 "Bangladesh","ausgov","Australia",81357436.557,2019
 "Bangladesh","gavi","Global Alliance for Vaccines and Immunization [GAVI]",76645188,2017
 "Bangladesh","odakorea","Korea",68095060.704,2019
-"Bangladesh","undp","UNDP",56491628,2019
-"Bangladesh","wvi",,55443082,2018
+"Bangladesh","theglobalfund","Global Fund",60335251.55,2017
 "Benin","worldbank","World Bank Group, Total",206383777,2019
 "Benin","unitedstates","United States",95439358.12,2017
 "Benin","ec-devco","EU Institutions",82609351.395755,2018
 "Benin","bmz","Germany",72115098.71588,2019
+"Benin","theglobalfund","Global Fund",51241883.9500001,2017
 "Benin","afd","France",40902024.029642,2017
 "Benin","minbuza_nl","Netherlands",31789198.7296,2017
 "Benin","afdb","African Development Bank, Total",25873650.329463,2017
 "Benin","sdc_ch","Switzerland",22295327.5114,2018
 "Benin","be-dgd","Belgium",18379521.008455,2018
+"Benin","unicef","UNICEF",17134908,2017
 "Benin","gavi","Global Alliance for Vaccines and Immunization [GAVI]",14655590,2018
 "Benin","gac-amc","Canada",13933157.0432065,2019
 "Benin","undp","UNDP",13862193,2019
 "Benin","wfp","WFP",9381069,2019
-"Benin","who","World Health Organisation [WHO]",8835575.18,2017
-"Benin","snv",,6102861.15868,2019
 "Burkina Faso","worldbank","World Bank Group, Total",374273978,2018
 "Burkina Faso","ec-devco","EU Institutions",180089327.085106,2018
 "Burkina Faso","afd","France",110796594.265758,2017
 "Burkina Faso","bmz","Germany",81515798.290663,2019
 "Burkina Faso","unitedstates","United States",58095428.67,2017
 "Burkina Faso","wfp","WFP",53763171,2019
+"Burkina Faso","unicef","UNICEF",51100512,2019
+"Burkina Faso","theglobalfund","Global Fund",49735123.72,2019
 "Burkina Faso","gac-amc","Canada",39063243.471455,2018
 "Burkina Faso","danida","Denmark",38060744.195232,2018
 "Burkina Faso","sida","Sweden",27820026.133417,2019
@@ -42,12 +44,12 @@
 "Burkina Faso","afdb","African Development Bank, Total",20167100.932776,2017
 "Burkina Faso","sdc_ch","Switzerland",19706950.0016,2018
 "Burkina Faso","unhcr","UNHCR",16883364.26,2017
-"Burkina Faso","ifad","IFAD",15486409.69873,2019
-"Burkina Faso","undp","UNDP",14923502,2019
 "Burundi","worldbank","World Bank Group, Total",94269279,2019
 "Burundi","ec-devco","EU Institutions",69606628.265854,2019
+"Burundi","theglobalfund","Global Fund",59866631.57,2017
 "Burundi","unitedstates","United States",50679495.01,2017
 "Burundi","undp","UNDP",49753417,2019
+"Burundi","unicef","UNICEF",45049200,2017
 "Burundi","wfp","WFP",38501477,2018
 "Burundi","minbuza_nl","Netherlands",37097327.75,2018
 "Burundi","gavi","Global Alliance for Vaccines and Immunization [GAVI]",33709619,2018
@@ -57,8 +59,6 @@
 "Burundi","ifad","IFAD",17769423.501182,2017
 "Burundi","unpf",,15843650.5583,2017
 "Burundi","icrc","IFRCRCS",11724020.125834,2018
-"Burundi","bmz","Germany",11520511.314125,2019
-"Burundi","afdb","African Development Bank, Total",11326188.874,2019
 "Colombia","worldbank","World Bank Group, Total",1426817091,2018
 "Colombia","iadb","Inter-American Development Bank, Total",1023536950,2019
 "Colombia","unitedstates","United States",322530304.300001,2018
@@ -79,21 +79,23 @@
 "Congo","worldbank","World Bank Group, Total",55431284,2019
 "Congo","ec-devco","EU Institutions",21243154.931555,2018
 "Congo","wfp","WFP",17785573,2019
+"Congo","theglobalfund","Global Fund",15423970.65,2019
 "Congo","unhcr","UNHCR",12211981.54,2017
 "Congo","pin",,11677850.360262,2019
 "Congo","unitedstates","United States",8527392.36,2018
+"Congo","unicef","UNICEF",7774957,2019
 "Congo","who","World Health Organisation [WHO]",5924178.84,2017
 "Congo","cerf","Central Emergency Response Fund [CERF]",4371548,2017
 "Congo","undp","UNDP",3567808,2019
 "Congo","irishaid","Ireland",3387900,2017
 "Congo","danida","Denmark",2266500,2019
-"Congo","unfpa","UNFPA",2075885.33,2019
-"Congo","fao",,2031095.28,2017
 "Democratic Republic of the Congo","unitedstates","United States",527036113.56,2019
 "Democratic Republic of the Congo","worldbank","World Bank Group, Total",423287305,2019
 "Democratic Republic of the Congo","who","World Health Organisation [WHO]",284342327.35,2019
+"Democratic Republic of the Congo","unicef","UNICEF",274541296,2019
 "Democratic Republic of the Congo","dfid","United Kingdom",268010340.8924,2018
 "Democratic Republic of the Congo","wfp","WFP",258786869,2019
+"Democratic Republic of the Congo","theglobalfund","Global Fund",226042550.75,2017
 "Democratic Republic of the Congo","bmz","Germany",210389457.898532,2019
 "Democratic Republic of the Congo","ec-devco","EU Institutions",168777365.9755,2018
 "Democratic Republic of the Congo","icrc","IFRCRCS",110719595.385236,2018
@@ -102,8 +104,6 @@
 "Democratic Republic of the Congo","gavi","Global Alliance for Vaccines and Immunization [GAVI]",90086506,2017
 "Democratic Republic of the Congo","sida","Sweden",79297816.361698,2018
 "Democratic Republic of the Congo","be-dgd","Belgium",76961280.983245,2018
-"Democratic Republic of the Congo","cerf","Central Emergency Response Fund [CERF]",64143757.52,2018
-"Democratic Republic of the Congo","gac-amc","Canada",59622919.1677233,2018
 "Dominican Republic","iadb","Inter-American Development Bank, Total",464076655,2019
 "Dominican Republic","unitedstates","United States",64836016.41,2017
 "Dominican Republic","worldbank","World Bank Group, Total",55227289,2019
@@ -113,33 +113,35 @@
 "Dominican Republic","ofid","OPEC Fund for International Development [OFID]",21786390.79,2018
 "Dominican Republic","bmz","Germany",12222736.990354,2019
 "Dominican Republic","ifad","IFAD",8398536.384193,2017
+"Dominican Republic","theglobalfund","Global Fund",7983415.91,2017
 "Dominican Republic","wvi",,7501862,2018
 "Dominican Republic","icrc","IFRCRCS",4284849.941595,2017
+"Dominican Republic","unicef","UNICEF",3798970,2019
 "Dominican Republic","aecid",,3013510.55356,2018
 "Dominican Republic","who","World Health Organisation [WHO]",2478683,2019
-"Dominican Republic","globalgiving",,2316810,2019
-"Dominican Republic","wfp","WFP",2222860,2019
 "Ghana","self-help-africa",,1415849965.3056,2019
 "Ghana","worldbank","World Bank Group, Total",358280422,2017
 "Ghana","unitedstates","United States",200547760.08,2017
+"Ghana","theglobalfund","Global Fund",94246213.8299999,2017
 "Ghana","bmz","Germany",78620113.031042,2019
 "Ghana","ec-devco","EU Institutions",72796346.9418,2018
 "Ghana","afdb","African Development Bank, Total",70487696.919342,2017
 "Ghana","gac-amc","Canada",66480255.4053927,2018
 "Ghana","dfid","United Kingdom",64796809.1056,2017
+"Ghana","unicef","UNICEF",43746076,2017
 "Ghana","danida","Denmark",40796898.7916161,2018
 "Ghana","gavi","Global Alliance for Vaccines and Immunization [GAVI]",34758022,2018
 "Ghana","afd","France",24142520.496072,2019
 "Ghana","minbuza_nl","Netherlands",19775305.5574,2017
 "Ghana","wvi",,15555138,2017
-"Ghana","who","World Health Organisation [WHO]",10038840.87,2019
-"Ghana","gecfundmanagerpwc",,7568351.950978,2019
 "Guinea","worldbank","World Bank Group, Total",133300789,2019
 "Guinea","ec-devco","EU Institutions",87412020.7857101,2018
 "Guinea","unitedstates","United States",61872347.75,2017
 "Guinea","who","World Health Organisation [WHO]",52137386.29,2017
+"Guinea","theglobalfund","Global Fund",48189016.14,2019
 "Guinea","afd","France",38731954.840502,2019
 "Guinea","bmz","Germany",37166931.651805,2018
+"Guinea","unicef","UNICEF",34777896,2017
 "Guinea","undp","UNDP",19122699,2019
 "Guinea","unpf",,14343938.2888,2017
 "Guinea","gavi","Global Alliance for Vaccines and Immunization [GAVI]",13171014,2017
@@ -147,8 +149,6 @@
 "Guinea","be-dgd","Belgium",8716084.62442,2018
 "Guinea","afdb","African Development Bank, Total",8159586.453741,2017
 "Guinea","ofid","OPEC Fund for International Development [OFID]",5970468.4,2017
-"Guinea","unfpa","UNFPA",5630956.89,2019
-"Guinea","ifad","IFAD",5608406.274642,2019
 "Honduras","iadb","Inter-American Development Bank, Total",311609233,2018
 "Honduras","unitedstates","United States",166564710.33,2018
 "Honduras","eib",,73447706.76,2019
@@ -163,13 +163,15 @@
 "Honduras","sdc_ch","Switzerland",14673478.6262,2018
 "Honduras","ofid","OPEC Fund for International Development [OFID]",10739967.4,2017
 "Honduras","aecid",,9782399.48052,2018
-"Honduras","fomin",,8043765,2018
+"Honduras","theglobalfund","Global Fund",8127751.46,2019
 "Indonesia","asdb","Asian Development Bank, Total",1830503175.62,2018
 "Indonesia","worldbank","World Bank Group, Total",1648504477,2019
 "Indonesia","ausgov","Australia",293352420.8331,2019
 "Indonesia","unitedstates","United States",177775588.72,2017
+"Indonesia","theglobalfund","Global Fund",101135960.22,2017
 "Indonesia","icrc","IFRCRCS",84157329.482156,2018
 "Indonesia","bmz","Germany",71830041.67251,2019
+"Indonesia","unicef","UNICEF",37930811,2019
 "Indonesia","gavi","Global Alliance for Vaccines and Immunization [GAVI]",35290409,2017
 "Indonesia","norad","Norway",33269134.4498,2019
 "Indonesia","undp","UNDP",27000801,2018
@@ -177,8 +179,7 @@
 "Indonesia","who","World Health Organisation [WHO]",23120218.64,2017
 "Indonesia","dfid","United Kingdom",22732922.2464,2018
 "Indonesia","gac-amc","Canada",19797188.8476564,2018
-"Indonesia","minbuza_nl","Netherlands",17809726.1577,2017
-"Indonesia","wvi",,16953458,2019
+"Lebanon","unicef","UNICEF",350677290,2017
 "Lebanon","unhcr","UNHCR",325817027.67,2017
 "Lebanon","wfp","WFP",319675482,2019
 "Lebanon","bmz","Germany",294159147.728314,2019
@@ -193,13 +194,14 @@
 "Lebanon","norad","Norway",64466179.194,2018
 "Lebanon","undp","UNDP",64048551,2019
 "Lebanon","unpf",,53386825.525,2017
-"Lebanon","icrc","IFRCRCS",45308613.667988,2018
 "Liberia","unitedstates","United States",197999700.15,2017
 "Liberia","bmz","Germany",82211369.3,2018
 "Liberia","worldbank","World Bank Group, Total",58325677,2018
 "Liberia","ec-devco","EU Institutions",41716123.469157,2017
 "Liberia","who","World Health Organisation [WHO]",41070910.72,2017
 "Liberia","sida","Sweden",39265943.539972,2018
+"Liberia","unicef","UNICEF",36756336,2017
+"Liberia","theglobalfund","Global Fund",31699339.6,2018
 "Liberia","undp","UNDP",23199252,2018
 "Liberia","norad","Norway",17404073.5401,2017
 "Liberia","afdb","African Development Bank, Total",14474480.823418,2019
@@ -207,13 +209,13 @@
 "Liberia","afd","France",11815000,2018
 "Liberia","unpf",,10521785.4071,2017
 "Liberia","dfid","United Kingdom",10372788.9591,2019
-"Liberia","unhcr","UNHCR",9818854.67,2017
-"Liberia","gavi","Global Alliance for Vaccines and Immunization [GAVI]",8345254,2017
 "Madagascar","worldbank","World Bank Group, Total",208412198,2019
 "Madagascar","afd","France",81294864.473328,2019
 "Madagascar","unitedstates","United States",75109161.27,2019
 "Madagascar","ec-devco","EU Institutions",66803309.260425,2017
+"Madagascar","theglobalfund","Global Fund",47912831.06,2018
 "Madagascar","bmz","Germany",46762632.939968,2019
+"Madagascar","unicef","UNICEF",45790439,2017
 "Madagascar","unpf",,42944200.2761,2017
 "Madagascar","wfp","WFP",38695682,2017
 "Madagascar","afdb","African Development Bank, Total",31955841.338049,2017
@@ -222,23 +224,21 @@
 "Madagascar","who","World Health Organisation [WHO]",18364054.54,2017
 "Madagascar","gavi","Global Alliance for Vaccines and Immunization [GAVI]",18007477,2018
 "Madagascar","ifad","IFAD",16140619.179678,2019
-"Madagascar","eib",,15178696.5,2019
-"Madagascar","cerf","Central Emergency Response Fund [CERF]",10960423,2017
 "Malawi","worldbank","World Bank Group, Total",297503371,2017
 "Malawi","unitedstates","United States",294655326.2,2018
+"Malawi","theglobalfund","Global Fund",172925148.08,2017
 "Malawi","wfp","WFP",153140569,2017
 "Malawi","bmz","Germany",132847344.450942,2019
 "Malawi","ec-devco","EU Institutions",103310916.127656,2017
 "Malawi","dfid","United Kingdom",99758029.0113,2017
 "Malawi","wvi",,73912592,2017
 "Malawi","norad","Norway",58457759.574,2018
+"Malawi","unicef","UNICEF",58137764,2017
 "Malawi","unpf",,50612585.9015,2017
 "Malawi","undp","UNDP",44526533,2017
 "Malawi","afdb","African Development Bank, Total",33036917.481291,2017
 "Malawi","irishaid","Ireland",24783504.57017,2018
 "Malawi","gavi","Global Alliance for Vaccines and Immunization [GAVI]",24317677,2018
-"Malawi","ofid","OPEC Fund for International Development [OFID]",18549827.66,2018
-"Malawi","scuk",,14755565.4895,2017
 "Mali","worldbank","World Bank Group, Total",367429069,2019
 "Mali","ec-devco","EU Institutions",195504137.643881,2018
 "Mali","unitedstates","United States",181757626.29,2017
@@ -246,29 +246,29 @@
 "Mali","bmz","Germany",114364935.553374,2019
 "Mali","gac-amc","Canada",86667450.9281698,2017
 "Mali","wfp","WFP",83659829,2018
+"Mali","unicef","UNICEF",72881057,2017
 "Mali","minbuza_nl","Netherlands",50169160.19,2018
 "Mali","sida","Sweden",45902289.205301,2018
 "Mali","icrc","IFRCRCS",45630028.434046,2018
 "Mali","unops",,45343853,2019
+"Mali","theglobalfund","Global Fund",44217344.42,2017
 "Mali","danida","Denmark",41936817.322762,2019
 "Mali","afdb","African Development Bank, Total",40604286.523959,2017
-"Mali","undp","UNDP",35439709,2017
-"Mali","sdc_ch","Switzerland",31678414.693,2018
 "Moldova","ec-devco","EU Institutions",107943523.405308,2017
 "Moldova","worldbank","World Bank Group, Total",43802421,2018
 "Moldova","unitedstates","United States",36032509.8,2018
 "Moldova","undp","UNDP",18695738,2018
 "Moldova","sida","Sweden",15921227.568322,2018
 "Moldova","sdc_ch","Switzerland",13132237.8225,2017
+"Moldova","theglobalfund","Global Fund",10818316.63,2017
 "Moldova","who","World Health Organisation [WHO]",5913061.06,2017
 "Moldova","bmz","Germany",5907500,2018
 "Moldova","ifad","IFAD",5128495.833862,2019
 "Moldova","pin",,4721946.957384,2019
 "Moldova","dggf_financing_local_smes",,4492400,2019
 "Moldova","norad","Norway",2619883.764,2018
+"Moldova","unicef","UNICEF",2549598,2018
 "Moldova","dfid","United Kingdom",2353568.5556,2019
-"Moldova","pwc",,2137910.7480705,2019
-"Moldova","unfpa","UNFPA",1212323.78,2019
 "Montenegro","bmz","Germany",71950751.292486,2019
 "Montenegro","eib",,44924000,2019
 "Montenegro","ec-devco","EU Institutions",44375538.248008,2019
@@ -276,29 +276,29 @@
 "Montenegro","undp","UNDP",9499165,2018
 "Montenegro","ebrd","European Bank for Reconstruction and Development [EBRD]",8967316.320446,2019
 "Montenegro","unitedstates","United States",4394693.66,2017
+"Montenegro","unicef","UNICEF",2408962,2018
 "Montenegro","norad","Norway",1910668.209,2019
 "Montenegro","ifad","IFAD",1772250,2018
 "Montenegro","who","World Health Organisation [WHO]",951381.64,2017
 "Montenegro","dfid","United Kingdom",857301.28045949,2017
 "Montenegro","slovakaid","Slovak Republic",298405.5475,2018
 "Montenegro","ilo","International Labour Organisation [ILO]",276343,2017
-"Montenegro","unops",,260537,2019
-"Montenegro","unido",,211884.93,2017
+"Montenegro","theglobalfund","Global Fund",262589.16,2019
 "Myanmar","worldbank","World Bank Group, Total",232738441,2019
 "Myanmar","dfid","United Kingdom",140680808.8631,2017
 "Myanmar","ec-devco","EU Institutions",116329392.879183,2019
 "Myanmar","unitedstates","United States",112376699.62,2018
+"Myanmar","theglobalfund","Global Fund",105504172.46,2017
 "Myanmar","ausgov","Australia",84957743.646,2019
 "Myanmar","unops",,61846814,2019
 "Myanmar","icrc","IFRCRCS",54241479.172784,2018
+"Myanmar","unicef","UNICEF",53831799,2017
 "Myanmar","unpf",,48072058.6053,2017
 "Myanmar","wfp","WFP",46601684,2019
 "Myanmar","sida","Sweden",44835059.628981,2018
 "Myanmar","gavi","Global Alliance for Vaccines and Immunization [GAVI]",38486877,2018
 "Myanmar","bmz","Germany",37557772.770892,2019
 "Myanmar","asdb","Asian Development Bank, Total",37525850.81,2018
-"Myanmar","who","World Health Organisation [WHO]",37509582.55,2017
-"Myanmar","odakorea","Korea",36730514.1933,2019
 "Nepal","worldbank","World Bank Group, Total",495087056,2018
 "Nepal","asdb","Asian Development Bank, Total",291577031.61,2019
 "Nepal","bmz","Germany",224510229.374024,2019
@@ -306,18 +306,20 @@
 "Nepal","icrc","IFRCRCS",136660278.602728,2018
 "Nepal","dfid","United Kingdom",126078099.6244,2017
 "Nepal","ec-devco","EU Institutions",87982211.183698,2017
+"Nepal","unicef","UNICEF",67918540,2017
 "Nepal","norad","Norway",32874722.049,2018
 "Nepal","sdc_ch","Switzerland",30646069.743,2017
 "Nepal","undp","UNDP",26379362,2017
 "Nepal","ausgov","Australia",24744633.597,2019
 "Nepal","wfp","WFP",24096002,2017
+"Nepal","theglobalfund","Global Fund",23678283.57,2017
 "Nepal","finland_mfa","Finland",20253873.5356,2017
-"Nepal","wvi",,20208286,2017
-"Nepal","danida","Denmark",19104353.785934,2017
 "Nigeria","worldbank","World Bank Group, Total",1579164006,2019
 "Nigeria","unitedstates","United States",808382676.31,2018
 "Nigeria","dfid","United Kingdom",380661317.5717,2017
 "Nigeria","afdb","African Development Bank, Total",350399979.197382,2017
+"Nigeria","theglobalfund","Global Fund",290918079.51,2017
+"Nigeria","unicef","UNICEF",287782193,2017
 "Nigeria","wfp","WFP",278500863,2017
 "Nigeria","who","World Health Organisation [WHO]",276969841.63,2017
 "Nigeria","ec-devco","EU Institutions",265984778.414773,2017
@@ -327,14 +329,14 @@
 "Nigeria","bmz","Germany",75461089,2019
 "Nigeria","unpf",,61928809.9928,2017
 "Nigeria","palladium",,52591617.2111,2017
-"Nigeria","gac-amc","Canada",51893471.4238444,2017
-"Nigeria","sida","Sweden",33580297.291438,2017
 "Papua New Guinea","ausgov","Australia",529078034.3094,2019
 "Papua New Guinea","asdb","Asian Development Bank, Total",275203235.35,2019
 "Papua New Guinea","worldbank","World Bank Group, Total",192367527,2018
 "Papua New Guinea","ec-devco","EU Institutions",47497499.653351,2019
 "Papua New Guinea","who","World Health Organisation [WHO]",42819777.58,2019
 "Papua New Guinea","mfat","New Zealand",30609375.4984089,2019
+"Papua New Guinea","unicef","UNICEF",22239082,2018
+"Papua New Guinea","theglobalfund","Global Fund",21778047.86,2017
 "Papua New Guinea","undp","UNDP",16831829,2019
 "Papua New Guinea","unpf",,13696763.3663,2017
 "Papua New Guinea","unitedstates","United States",9202673.25,2018
@@ -342,11 +344,10 @@
 "Papua New Guinea","gavi","Global Alliance for Vaccines and Immunization [GAVI]",8304278,2019
 "Papua New Guinea","ifad","IFAD",5259320.31937,2019
 "Papua New Guinea","ofid","OPEC Fund for International Development [OFID]",3366144.18,2017
-"Papua New Guinea","unfpa","UNFPA",3245730.91,2019
-"Papua New Guinea","fao",,3127116.04,2017
 "Rwanda","worldbank","World Bank Group, Total",279224931,2017
 "Rwanda","unitedstates","United States",157264071.66,2018
 "Rwanda","ec-devco","EU Institutions",149545101.862535,2017
+"Rwanda","theglobalfund","Global Fund",94529926.36,2019
 "Rwanda","afdb","African Development Bank, Total",85662948.473872,2019
 "Rwanda","bmz","Germany",84064313.910654,2019
 "Rwanda","dfid","United Kingdom",70747009.2978,2017
@@ -357,29 +358,30 @@
 "Rwanda","wfp","WFP",31187119,2017
 "Rwanda","sida","Sweden",31152492.154533,2018
 "Rwanda","afd","France",30215855.4456,2019
-"Rwanda","wvi",,25294446,2017
-"Rwanda","gavi","Global Alliance for Vaccines and Immunization [GAVI]",15998748,2017
+"Rwanda","unicef","UNICEF",29496275,2017
 "Sao Tome and Principe","worldbank","World Bank Group, Total",15956055,2019
 "Sao Tome and Principe","ec-devco","EU Institutions",7726640.718722,2017
 "Sao Tome and Principe","undp","UNDP",4561290,2018
 "Sao Tome and Principe","afdb","African Development Bank, Total",3897027.815681,2018
+"Sao Tome and Principe","theglobalfund","Global Fund",3755596.88,2017
 "Sao Tome and Principe","who","World Health Organisation [WHO]",1816610.02,2017
+"Sao Tome and Principe","unicef","UNICEF",1749927,2019
 "Sao Tome and Principe","gavi","Global Alliance for Vaccines and Immunization [GAVI]",1577755,2017
 "Sao Tome and Principe","fao",,985030.75,2017
 "Sao Tome and Principe","ifad","IFAD",736976.953377,2017
+"Sao Tome and Principe","rvo",,727748.717615,2018
 "Sao Tome and Principe","ofid","OPEC Fund for International Development [OFID]",672507.61,2017
 "Sao Tome and Principe","imf",,586489,2018
 "Sao Tome and Principe","unfpa","UNFPA",533113.83,2019
 "Sao Tome and Principe","wfp","WFP",280116,2019
-"Sao Tome and Principe","afd","France",233570.735,2018
-"Sao Tome and Principe","unops",,123600,2018
-"Sao Tome and Principe","unops",,123600,2019
 "Sierra Leone","dfid","United Kingdom",123967773.1919,2017
 "Sierra Leone","worldbank","World Bank Group, Total",91349372,2019
+"Sierra Leone","unicef","UNICEF",83983574,2017
 "Sierra Leone","icrc","IFRCRCS",78298260.92976,2017
 "Sierra Leone","ec-devco","EU Institutions",67612659.583293,2019
 "Sierra Leone","unitedstates","United States",52683883.05,2017
 "Sierra Leone","who","World Health Organisation [WHO]",49423434.16,2017
+"Sierra Leone","theglobalfund","Global Fund",42009152.17,2017
 "Sierra Leone","bmz","Germany",24259682.108376,2019
 "Sierra Leone","undp","UNDP",21130946,2018
 "Sierra Leone","wvi",,20192699,2017
@@ -387,13 +389,12 @@
 "Sierra Leone","odakorea","Korea",15737002.038,2019
 "Sierra Leone","ofid","OPEC Fund for International Development [OFID]",15190095.17,2018
 "Sierra Leone","ifad","IFAD",15018976.904149,2018
-"Sierra Leone","irishaid","Ireland",14391511.877825,2018
-"Sierra Leone","irc_inc",,13523174.3244,2019
 "Somalia","ec-devco","EU Institutions",435412452.125484,2018
 "Somalia","unitedstates","United States",401638952.35,2019
 "Somalia","dfid","United Kingdom",337141533.6168,2017
 "Somalia","wfp","WFP",333799006,2017
 "Somalia","unpf",,320010576.6334,2017
+"Somalia","unicef","UNICEF",187603348,2017
 "Somalia","fao",,134041469.15,2017
 "Somalia","bmz","Germany",109852396.955268,2019
 "Somalia","sida","Sweden",107067815.041843,2018
@@ -403,7 +404,6 @@
 "Somalia","norad","Norway",66803596.902,2018
 "Somalia","danida","Denmark",60568972.639487,2019
 "Somalia","cerf","Central Emergency Response Fund [CERF]",60500772.83,2019
-"Somalia","undp","UNDP",56847871,2019
 "Syrian Arab Republic","bmz","Germany",620978157.971529,2018
 "Syrian Arab Republic","unitedstates","United States",591700340.649999,2018
 "Syrian Arab Republic","wfp","WFP",418236991,2019
@@ -412,16 +412,17 @@
 "Syrian Arab Republic","dfid","United Kingdom",267618464.4567,2019
 "Syrian Arab Republic","ec-devco","EU Institutions",259280607.593559,2018
 "Syrian Arab Republic","unhcr","UNHCR",227422401.78,2018
+"Syrian Arab Republic","unicef","UNICEF",171654587,2017
 "Syrian Arab Republic","norad","Norway",123314803.494,2018
 "Syrian Arab Republic","gac-amc","Canada",102815710.490077,2018
 "Syrian Arab Republic","danida","Denmark",82561112.54311,2019
 "Syrian Arab Republic","sida","Sweden",72911200.117347,2018
 "Syrian Arab Republic","who","World Health Organisation [WHO]",66039255.92,2017
 "Syrian Arab Republic","ciuk",,58064553.8651746,2018
-"Syrian Arab Republic","cssf",,50947412,2018
 "Tanzania","unitedstates","United States",703750445.28,2018
 "Tanzania","worldbank","World Bank Group, Total",557770565,2019
 "Tanzania","rc",,406768417.04411,2019
+"Tanzania","theglobalfund","Global Fund",242690687.38,2017
 "Tanzania","dfid","United Kingdom",205578367.9983,2017
 "Tanzania","sida","Sweden",135674207.064416,2017
 "Tanzania","ec-devco","EU Institutions",135648155.184975,2018
@@ -433,7 +434,6 @@
 "Tanzania","danida","Denmark",54320317.3497599,2018
 "Tanzania","norad","Norway",48869651.889,2018
 "Tanzania","gavi","Global Alliance for Vaccines and Immunization [GAVI]",48203062,2018
-"Tanzania","wfp","WFP",47831421,2018
 "Viet Nam","worldbank","World Bank Group, Total",1049629837,2017
 "Viet Nam","asdb","Asian Development Bank, Total",488039673.8,2017
 "Viet Nam","bmz","Germany",301365364.833918,2019
@@ -441,16 +441,17 @@
 "Viet Nam","unitedstates","United States",108243779.21,2018
 "Viet Nam","ausgov","Australia",70272646.8048,2017
 "Viet Nam","ec-devco","EU Institutions",66343988.71754,2018
+"Viet Nam","theglobalfund","Global Fund",52078995.26,2017
 "Viet Nam","odakorea","Korea",37921908.2706,2019
+"Viet Nam","rvo",,23551003.484589,2017
 "Viet Nam","undp","UNDP",21223244,2019
 "Viet Nam","be-dgd","Belgium",18889270.2395,2018
 "Viet Nam","unpf",,18888648.3935,2017
 "Viet Nam","who","World Health Organisation [WHO]",17018784.38,2017
 "Viet Nam","wvi",,14914604,2018
-"Viet Nam","finland_mfa","Finland",12514283.7436,2017
-"Viet Nam","ifad","IFAD",11747833.939436,2017
 "Yemen","wfp","WFP",1458411595,2019
 "Yemen","ksrelief291",,1014825272,2018
+"Yemen","unicef","UNICEF",635291424,2019
 "Yemen","unitedstates","United States",587150176.79,2019
 "Yemen","worldbank","World Bank Group, Total",573025262,2019
 "Yemen","unpf",,471703970.41,2017
@@ -463,4 +464,3 @@
 "Yemen","bmz","Germany",151375415.892258,2018
 "Yemen","unhcr","UNHCR",135333895.55,2018
 "Yemen","icrc","IFRCRCS",107069796.33898,2018
-"Yemen","ciuk",,52950554.0683288,2019
