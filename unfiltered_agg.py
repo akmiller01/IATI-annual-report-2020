@@ -125,7 +125,7 @@ class IatiFlat(object):
             if publisher == "fco":
                 defaults["default-currency"] = "GBP"
 
-            if secondary_reporter == "0":
+            if secondary_reporter == "0" or secondary_reporter == "false":
                 has_transactions = "transaction" in child_tags
                 if has_transactions:
                     transactions = activity.findall("transaction")
