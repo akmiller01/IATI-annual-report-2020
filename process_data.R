@@ -288,7 +288,7 @@ setnames(trans.recip.max,"year","iati.year")
 setnames(trans.recip.max,"value","iati.value")
 
 # exclude <- c("abt","akfuk73","dec-uk","palladium","plan_usa","spuk","wwf-uk")
-exclude = c("wwf-uk")
+exclude = c("wwf-uk", "pin")
 trans.recip.max <- subset(trans.recip.max,!(publisher %in% exclude))
 
 crs <- fread("crs.csv")

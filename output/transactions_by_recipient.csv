@@ -81,7 +81,6 @@
 "Congo","wfp","WFP",17785573,2019
 "Congo","theglobalfund","Global Fund",15423970.65,2019
 "Congo","unhcr","UNHCR",12211981.54,2017
-"Congo","pin",,11677850.360262,2019
 "Congo","unitedstates","United States",8527392.36,2018
 "Congo","unicef","UNICEF",7774957,2019
 "Congo","who","World Health Organisation [WHO]",5924178.84,2017
@@ -89,6 +88,7 @@
 "Congo","undp","UNDP",3567808,2019
 "Congo","irishaid","Ireland",3387900,2017
 "Congo","danida","Denmark",2266500,2019
+"Congo","unfpa","UNFPA",2075885.33,2019
 "Democratic Republic of the Congo","unitedstates","United States",527036113.56,2019
 "Democratic Republic of the Congo","worldbank","World Bank Group, Total",423287305,2019
 "Democratic Republic of the Congo","who","World Health Organisation [WHO]",284342327.35,2019
@@ -264,11 +264,11 @@
 "Moldova","who","World Health Organisation [WHO]",5913061.06,2017
 "Moldova","bmz","Germany",5907500,2018
 "Moldova","ifad","IFAD",5128495.833862,2019
-"Moldova","pin",,4721946.957384,2019
 "Moldova","dggf_financing_local_smes",,4492400,2019
 "Moldova","norad","Norway",2619883.764,2018
 "Moldova","unicef","UNICEF",2549598,2018
 "Moldova","dfid","United Kingdom",2353568.5556,2019
+"Moldova","pwc",,2137910.7480705,2019
 "Montenegro","bmz","Germany",71950751.292486,2019
 "Montenegro","eib",,44924000,2019
 "Montenegro","ec-devco","EU Institutions",44375538.248008,2019
@@ -408,7 +408,6 @@
 "Syrian Arab Republic","unitedstates","United States",591700340.649999,2018
 "Syrian Arab Republic","wfp","WFP",418236991,2019
 "Syrian Arab Republic","icrc","IFRCRCS",387762968.917404,2018
-"Syrian Arab Republic","pin",,304756695.914646,2019
 "Syrian Arab Republic","dfid","United Kingdom",267618464.4567,2019
 "Syrian Arab Republic","ec-devco","EU Institutions",259280607.593559,2018
 "Syrian Arab Republic","unhcr","UNHCR",227422401.78,2018
@@ -419,6 +418,7 @@
 "Syrian Arab Republic","sida","Sweden",72911200.117347,2018
 "Syrian Arab Republic","who","World Health Organisation [WHO]",66039255.92,2017
 "Syrian Arab Republic","ciuk",,58064553.8651746,2018
+"Syrian Arab Republic","cssf",,50947412,2018
 "Tanzania","unitedstates","United States",703750445.28,2018
 "Tanzania","worldbank","World Bank Group, Total",557770565,2019
 "Tanzania","rc",,406768417.04411,2019
