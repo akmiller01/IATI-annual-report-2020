@@ -16,6 +16,10 @@ transactions.aggregate.2019 <- subset(transactions.aggregate,year==2019)
 trans.2019.tab <- data.table(transactions.aggregate.2019)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
 
 budgets.aggregate.19.20.21 <- subset(budgets.aggregate,year %in% c(2019,2020,2021))
+wb = subset(budgets.aggregate.19.20.21, publisher=="worldbank")
+budgets.aggregate.19.20.21 = subset(budgets.aggregate.19.20.21, publisher!="worldbank")
+wb = unique(wb) # Double counting
+budgets.aggregate.19.20.21 = rbind(budgets.aggregate.19.20.21, wb)
 
 bud.19.20.21.tab <- data.table(budgets.aggregate.19.20.21)[,.(value=sum(usd_disbursement,na.rm=TRUE)),by=.(publisher,year)]
 
