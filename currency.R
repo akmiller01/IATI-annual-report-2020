@@ -31,6 +31,22 @@ ccs = ccs[,keep,with=F]
 
 wdat = merge(wdat,ccs,by="ISO")
 
+# Bitcoin transaction in 2015
+xbt_df = data.frame(cc="XBT",year=2015,ex.rate=230.54)
+wdat = rbind(wdat,xbt_df,fill=T)
+
+# XDR
+xdr = fread("xdr.csv")
+setnames(xdr,"XDR","ex.rate")
+xdr$cc = "XDR"
+wdat = rbind(wdat,xdr,fill=T)
+
+wdat = wdat[order(wdat$cc,wdat$year),]
+
+# grid.2030 = expand.grid(cc=unique(wdat$cc),year=c(1980:2030))
+# wdat = merge(wdat,grid.2030,all=T)
+# wdat$ex.rate[which(is.na(wdat$ex.rate))] = 0
+
 ex_list = list()
 
 for(this.cc in unique(wdat$cc)){
@@ -42,17 +58,7 @@ for(this.cc in unique(wdat$cc)){
   ex_list[[this.cc]] = sub_list
 }
 
-# Bitcoin transaction in 2015
-xbt_list = list("2015"=230.54)
-ex_list[["XBT"]] = xbt_list
-
-# XDR
-xdr = fread("xdr.csv")
-xdr_list = list()
-for(i in 1:nrow(xdr)){
-  xdr_list[as.character(xdr[i,"year"])] = xdr[i,"XDR"]
-}
-ex_list[["XDR"]] = xdr_list
 
 ex_json  = toJSON(ex_list, auto_unbox=T)
 write(ex_json,"ex_rates.json")
+fwrite(wdat[,c("year","cc","ex.rate"),with=F],"ex_rates.csv")
