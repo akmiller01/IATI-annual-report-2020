@@ -38,6 +38,8 @@ wdat = rbind(wdat,xbt_df,fill=T)
 # XDR
 xdr = fread("xdr.csv")
 setnames(xdr,"XDR","ex.rate")
+xdr$ex.rate = 1/xdr$ex.rate
+xdr$ex.rate[which(!is.finite(xdr$ex.rate))] = 0
 xdr$cc = "XDR"
 wdat = rbind(wdat,xdr,fill=T)
 
