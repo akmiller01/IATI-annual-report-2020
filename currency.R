@@ -33,7 +33,7 @@ wdat = merge(wdat,ccs,by="ISO")
 
 # Bitcoin transaction in 2015
 xbt_df = data.frame(cc="XBT",year=2015,ex.rate=230.54)
-wdat = rbind(wdat,xbt_df,fill=T)
+wdat = rbindlist(list(wdat,xbt_df),fill=T)
 
 # XDR
 xdr = fread("xdr.csv")
