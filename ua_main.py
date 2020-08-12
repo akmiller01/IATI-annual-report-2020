@@ -3,8 +3,10 @@ import pandas as pd
 import os
 import shutil
 from lxml import etree
+from lxml.etree import XMLParser
 
 if __name__ == '__main__':
+    large_parser = XMLParser(huge_tree=True)
     # Initialize flattener class
     iatiflat = IatiFlat()
 
@@ -28,7 +30,7 @@ if __name__ == '__main__':
             publisher = os.path.basename(subdir)
             print(filename)
             try:
-                root = etree.parse(filepath).getroot()
+                root = etree.parse(filepath, parser=large_parser).getroot()
             except etree.XMLSyntaxError:
                 continue
             output = iatiflat.flatten_activities(root, publisher)
